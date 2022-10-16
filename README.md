@@ -20,31 +20,59 @@ Full adder is a digital circuit used to calculate the sum of three binary bits. 
 
 Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = AB + ACin + BCin
 
- ![image](https://user-images.githubusercontent.com/36288975/163552156-a13e5a56-c638-4110-97d9-8896907c8d25.png)
-
 #### Figure -01 HALF ADDER 
 
+ ![image](https://user-images.githubusercontent.com/36288975/163552156-a13e5a56-c638-4110-97d9-8896907c8d25.png)
+
+#### Figure -02 FULL ADDER 
 
 ![image](https://user-images.githubusercontent.com/36288975/163552057-b3547877-6d07-45b4-b7e0-bcfebfad9e1d.png)
 
-#### Figure -02 FULL ADDER 
 
 ### Procedure
 
 Connect the supply (+5V) to the circuit
+
 Switch ON the main switch
+
 If the output is 1, then the led glows.
+
 ### 
 Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: V.Pallavi
+RegisterNumber: 212221240059
+### Half Adder:
+```
+module exp3(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor(sum,a,b);
+and(carry,a,b);
+endmodule 
+```
+### Full Adder:
+```
+module exp3(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum = ((a^b)^c);
+assign carry = ((a&b)|(b&c)|(c&a));
+endmodule
+```
 */
 Logic symbol & Truthtable
 RTL realization
 
 ### Output:
+### RTL
+![image](https://github.com/Pallavi-Raveendranadreddy/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/blob/b9ed45a210a9e2da0694251f1d721419e94556cc/rtl%201.PNG)
+### TIMING DIAGRAM
+![image](https://github.com/Pallavi-Raveendranadreddy/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/blob/b9ed45a210a9e2da0694251f1d721419e94556cc/timing%20diagram.PNG)
+### TRUTH TABLE
+![image](https://github.com/Pallavi-Raveendranadreddy/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/blob/b9ed45a210a9e2da0694251f1d721419e94556cc/truth%20table.PNG)
+
 ### RTL
 ![image](https://github.com/Pallavi-Raveendranadreddy/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/blob/6a6ee34af32c798d6d90ae277b3467a77e1d6ca7/rtl1.PNG)
 ### TIMING DIAGRAM
