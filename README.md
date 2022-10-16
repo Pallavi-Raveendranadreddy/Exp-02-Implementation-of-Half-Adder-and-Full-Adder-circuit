@@ -43,7 +43,9 @@ Program to design a half adder and full adder circuit and verify its truth table
 */
 
 Developed by: V.Pallavi
+
 RegisterNumber: 212221240059
+
 ### Half Adder:
 ```
 module exp3(a,b,sum,carry);
