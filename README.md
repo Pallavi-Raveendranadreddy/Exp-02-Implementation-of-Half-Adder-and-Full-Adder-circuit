@@ -46,8 +46,9 @@ RTL realization
 
 ### Output:
 ### RTL
+![image](https://github.com/Pallavi-Raveendranadreddy/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/blob/6a6ee34af32c798d6d90ae277b3467a77e1d6ca7/rtl1.PNG)
 ### TIMING DIAGRAM
-![image]()
+![image](https://github.com/Pallavi-Raveendranadreddy/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/blob/6a6ee34af32c798d6d90ae277b3467a77e1d6ca7/timing.PNG)
 
 ### TRUTH TABLE 
 ![image](https://github.com/Pallavi-Raveendranadreddy/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/blob/31f4a783c44e44cdca709a54ea5da5ae28914c08/truth.PNG)
